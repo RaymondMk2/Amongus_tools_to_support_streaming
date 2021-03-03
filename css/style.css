@@ -269,14 +269,14 @@ li.voice-state {
 }
 .speaking {
   /* border: 0px !important; */
-  /* border-color: rgba(0, 0, 0, 0) !important; */
+  border-color: rgba(0, 0, 0, 0) !important;
   position: relative;
   animation-name: speak-now;
   animation-duration: 5000ms;
   animation-fill-mode: forwards;
   filter: brightness(100%);
-  filter: drop-shadow(-1px -1px 2px #43b581) drop-shadow(1px -1px 2px #43b581)
-    drop-shadow(-1px 1px 2px #43b581) drop-shadow(1px 1px 2px #43b581);
+  filter: drop-shadow(-1px -1px 2px #606060) drop-shadow(1px -1px 2px #606060)
+    drop-shadow(-1px 1px 2px #606060) drop-shadow(1px 1px 2px #606060);
   /*filter: drop-shadow(right bottom blur color);*/
 }
 @keyframes speak-now {
