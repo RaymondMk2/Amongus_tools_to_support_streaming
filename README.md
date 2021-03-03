@@ -6,6 +6,8 @@
 </p>
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/RaymondMk2/Amongus_tools_to_support_streaming/main/sample01.jpg" />
+  <img src="https://raw.githubusercontent.com/RaymondMk2/Amongus_tools_to_support_streaming/main/sample02.jpg" />
   <a href="https://jqueryui.com/"><img src="https://user-images.githubusercontent.com/67271461/104057526-a6cb0780-5235-11eb-8627-d18c87969cc5.png" height="40px;" /></a>
 </p>
 
