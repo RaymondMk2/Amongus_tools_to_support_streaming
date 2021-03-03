@@ -1,0 +1,381 @@
+* {
+  user-select: none;
+}
+
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	min-height: 100vh;
+}
+
+.detective {
+	width:784px;
+	height:48px;
+	margin:2px;
+	border:1px;
+	padding: 0;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+.detectiveicon {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.detectiveiconsub {
+	width:16px;
+	height:16px;
+	margin: 0;
+	padding: 0;
+}
+
+.detectivesub {
+	width:768px;
+	height:48px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.detectivelist {
+	width:64px;
+	height:48px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.detectivelistsub {
+	width:60px;
+	height:12px;
+	margin:1px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	border:1px solid #666;
+	color: #FFFFFF;
+	background: #999999;
+	border-radius:8px;
+	font-size: 4px;
+	text-align: center;
+}
+
+.controlpanel {
+	margin:2px;
+	border:1px solid #666;
+}
+
+.controlpanelTitle {
+	width:60px;
+	height:24px;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.coloricon {
+	width:16px;
+	height:26px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.playercolor {
+	height:26px;
+}
+
+.colorbox {
+	position:relative;      /* 色リストの基準位置になる */
+	width:62px;
+	height:24px;
+	margin:0px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border:1px solid #666;
+	text-align:center;
+	border-radius:8px;
+	line-height:30px;
+	background: #FFFFFF;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+
+.colorbox ul {
+	display:none;           /* 最初、非表示にしておく */
+	position:absolute;      /* 親のボタン div に対する絶対位置で表示 */
+	top:35px;
+	left:30px;
+
+	background: #222;
+	padding:4px;
+	border:1px solid #666;
+
+	width:300px;            /* 適当に調整 */
+	list-style-type:none;   /* 箇条書きマークを消す */
+	line-height:1;
+	font-size:0;            /* 入れないと liの間に隙間ができる */
+}
+
+.colorbox li {
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.colorbox li input[type=radio] {
+	display:none;           /* input のラジオボタンのマークを消す */
+}
+
+.colorbox li label {
+	display:inline-block;   /* inline-block にすると imgタグと同じ感覚で扱える */
+	width:50px;
+	height:50px;
+	user-select:none;       /* テキスト選択を禁止 */
+}
+
+/* 色の上にマウスがきたら枠線をつけて強調 */
+.colorbox li:hover label {
+	border:4px solid #666;
+	width:42px;              /* (li の width) - (線の太さ x 2) */
+	height:42px;
+}
+
+.detectiveop {
+	width:784px;
+	height:72px;
+	margin: 0;
+	padding: 0;
+	margin-top: 12px;
+}
+
+.detectiveiconop {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.detectiveiconsubop {
+	width:16px;
+	height:24px;
+	margin: 0;
+	padding: 0;
+}
+
+.detectivesubop {
+	width:768px;
+	height:72px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.detectivelistop {
+	width:64px;
+	height:24px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.detectiveselect0 {
+	width:20px;
+	height:24px;
+	margin:0px;
+	border:1px solid #666;
+	color: #FFFFFF;
+	background: #000000;
+	border-radius:8px;
+	float: left;
+	font-size: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+.detectiveselect1 {
+	width:18px;
+	height:24px;
+	margin:0px;
+	border:1px solid #666;
+	color: #FFFFFF;
+	background: #999999;
+	border-radius:8px;
+	float: left;
+	font-size: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+.detectiveselect2 {
+	width:20px;
+	height:24px;
+	margin:0px;
+	border:1px solid #666;
+	color: #101010;
+	background: #FEFEFE;
+	border-radius:8px;
+	float: left;
+	font-size: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.resetbutton {
+	width:64px;
+	height:20px;
+	padding: 2px;
+	margin:2px;
+	margin-top: 24px;
+	margin-left: 12px;
+	border: solid 2px #F0F0F0;
+	border-radius: 4px;
+	transition: 0.3s;
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.resetbutton:visited {
+  color: #ffffff;
+}
+
+.resetbutton:hover {
+  background: #F0F0F0;
+  color: #000000;
+}
+
+/*-- Discord Overlay --*/
+
+li.voice-state {
+  margin-right: 8px !important;
+}
+
+.avatar {
+	height: 60px !important;
+	width: 60px !important;
+	filter: brightness(100%);
+	object-fit: contain;
+	box-sizing: content-box;
+	/* border-radius: 0 !important; */
+	border-radius: 36px !important;
+	border-top-width: 18px !important;
+	border-left-width: 3px !important;
+	border-right-width: 3px !important;
+}
+.speaking {
+  /* border: 0px !important; */
+  /* border-color: rgba(0, 0, 0, 0) !important; */
+  position: relative;
+  animation-name: speak-now;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  filter: brightness(100%);
+  filter: drop-shadow(-1px -1px 2px #43b581) drop-shadow(1px -1px 2px #43b581)
+    drop-shadow(-1px 1px 2px #43b581) drop-shadow(1px 1px 2px #43b581);
+  /*filter: drop-shadow(right bottom blur color);*/
+}
+@keyframes speak-now {
+  0% {
+    bottom: 0px;
+  }
+  5% {
+    bottom: 6px;
+  }
+  10% {
+    bottom: 0px;
+  }
+  15% {
+    bottom: 6px;
+  }
+  20% {
+    bottom: 0px;
+  }
+  25% {
+    bottom: 6px;
+  }
+  30% {
+    bottom: 0px;
+  }
+  35% {
+    bottom: 6px;
+  }
+  40% {
+    bottom: 0px;
+  }
+  45% {
+    bottom: 6px;
+  }
+  50% {
+    bottom: 0px;
+  }
+  55% {
+    bottom: 6px;
+  }
+  60% {
+    bottom: 0px;
+  }
+  65% {
+    bottom: 6px;
+  }
+  70% {
+    bottom: 0px;
+  }
+  75% {
+    bottom: 6px;
+  }
+  80% {
+    bottom: 0px;
+  }
+  85% {
+    bottom: 6px;
+  }
+  90% {
+    bottom: 0px;
+  }
+  95% {
+    bottom: 6px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.voice-states {
+  height: 70px;
+}
+.voice-states .voice-state {
+  display: inline-block;
+  width: 60px;
+  height: 70px !important;
+  outline: none;
+  padding: 0px 0px;
+  cursor: pointer;
+  z-index: 2;
+}
+.voice-states .user {
+  display: contents;
+}
+.voice-states .name {
+  display: block;
+  position: relative;
+  bottom: 10px;
+  left: 0px;
+  cursor: pointer;
+  font-size: 10px !important;
+  width: 66px;
+  line-height: 18px !important;
+  white-space: nowrap;
+  text-overflow: clip;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+#lock:checked ~ #app-mount .voice-state[alt="rgba(0, 0, 0, 0)"] {
+  display: none;
+}
