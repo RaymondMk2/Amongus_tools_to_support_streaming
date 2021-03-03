@@ -542,7 +542,6 @@ function callback(mutations) {
     var vUserid = $(val).attr('data-reactid');
     vUserList.push([vUserid,"",vUserName]);
   });
-  //console.log(vUserList);
 
   //保存データがあれば、更新されたプレイヤー一覧に対応する色を表示
   if(JSON.parse(localStorage.getItem('UserList'))) {
@@ -587,17 +586,19 @@ $(".colorbox").on("click", function () {
 $(".colorpalette").on("click", function () {
   var vSelectId = Number($(this).attr('data-id'));
   var vSelectColorId = Number($(this).attr('data-cid'));
-  //var vSelectColor = $(this).attr('value');
 
   changeAvatarButtonColor(vSelectId, vSelectColorId);
   changeAvatarColor(vSelectId, vSelectColorId);
 
-  var vUserData
-  if (vUserList.length >= vSelectId) {
-    vUserData = vUserList[vSelectId];
-    if (vUserData.length == 3) {
-      vUserData[1] = vSelectColorId;
+  try {
+    var vUserData
+    if (vUserList.length >= vSelectId) {
+      vUserData = vUserList[vSelectId];
+      if (vUserData.length == 3) {
+        vUserData[1] = vSelectColorId;
+      }
     }
+  } catch (e) {
   }
 
   // ローカルストレージへの色設定の保存
@@ -608,7 +609,6 @@ $(".colorpalette").on("click", function () {
     vUserData2 = vUserList[vSelectId];
 
     if(JSON.parse(localStorage.getItem('UserList'))) {
-      //console.log("セーブデータあるよ");
       vSaveUserList = JSON.parse(localStorage.getItem("UserList"));
 
       // ローカルストレージに一致するDiscordIDが存在するか（無:-1、有:配列のindex）
@@ -620,11 +620,9 @@ $(".colorpalette").on("click", function () {
 
       if(vSerchResult>-1){
         //ID一致の場合上書き
-        //console.log("ID一致");
         vSaveUserList[vSerchResult] = vUserData2;
       } else {
         //ID一致しない場合追加
-        //console.log("ID一致してない");
         vSaveUserList.push(vUserData2);
       }
       //ローカルストレージに上書き保存
@@ -632,15 +630,11 @@ $(".colorpalette").on("click", function () {
       
     } else {
       //ローカルストレージに新規保存
-      //console.log("セーブデータないよ");
       var vSaveData = [];
       vSaveData.push(vUserData2);
       localStorage.setItem("UserList", JSON.stringify(vSaveData));
     }
   }
-
-  //console.log(JSON.parse(localStorage.getItem("UserList")));
-
 });
 
 /* アバターの色変更 */
