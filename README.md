@@ -2,7 +2,7 @@
 <p align="center">A Chrome extension that helps us stream the game "AMONGUS".</p>
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/RaymondMk2/Amongus_tools_to_support_streaming/main/images/icon128.png"/>
+ <img src="https://raw.githubusercontent.com/RaymondMk2/Amongus_tools_to_support_streaming/main/images/icon48.png"/>
 </p>
 
 <p align="center">
