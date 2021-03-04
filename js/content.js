@@ -14,6 +14,21 @@ const CREW_COLORS = [
   "rgba(56, 254, 220, 1.0)",
   "rgba(80, 239, 57, 1.0)"
 ];
+const SUS_COLOR = "#FF0000";
+const SUS_CHAR_COLOR = "#FFFFFF";
+const QUE_COLOR = "#999999";
+const QUE_CHAR_COLOR = "#FFFFFF";
+const PUR_COLOR = "#0080FF";
+const PUR_CHAR_COLOR = "#FFFFFF";
+
+/*
+const SUS_COLOR = "#000000";
+const SUS_CHAR_COLOR = "#FFFFFF";
+const QUE_COLOR = "#999999";
+const QUE_CHAR_COLOR = "#FFFFFF";
+const PUR_COLOR = "#FEFEFE";
+const PUR_CHAR_COLOR = "#000000";
+*/
 
 /*----CSS読み込み----*/
 function appendCSS(url) {
@@ -723,10 +738,10 @@ function changeDetectiveSus(UserIndex, NumIndex, ColorIndex) {
       var vSusList = val.getElementsByClassName("detectivelistsub");
       var vSus = vSusList[NumIndex];
       switch(ColorIndex){
-        case 0 : vSus.style.backgroundColor = "#000000"; $(vSus).css("color","#FFFFFF"); $(vSus).text("SUS"); break;
-        case 1 : vSus.style.backgroundColor = "#999999"; $(vSus).css("color","#FFFFFF"); $(vSus).text("?"); break;
-        case 2 : vSus.style.backgroundColor = "#FEFEFE"; $(vSus).css("color","#000000"); $(vSus).text("PUR"); break;
-        default : vSus.style.backgroundColor = "#999999"; $(vSus).css("color","#FFFFFF"); $(vSus).text("?"); break;
+        case 0 : vSus.style.backgroundColor = SUS_COLOR; $(vSus).css("color",SUS_CHAR_COLOR); $(vSus).text("SUS"); break;
+        case 1 : vSus.style.backgroundColor = QUE_COLOR; $(vSus).css("color",QUE_CHAR_COLOR); $(vSus).text("?"); break;
+        case 2 : vSus.style.backgroundColor = PUR_COLOR; $(vSus).css("color",PUR_CHAR_COLOR); $(vSus).text("PUR"); break;
+        default : vSus.style.backgroundColor = QUE_COLOR; $(vSus).css("color",QUE_CHAR_COLOR); $(vSus).text("?"); break;
       }
   　}
   });
@@ -736,8 +751,8 @@ function changeDetectiveSus(UserIndex, NumIndex, ColorIndex) {
 $(".resetbutton").on("click", function () {
   var vSusList = document.getElementsByClassName("detectivelistsub");
   $.each(vSusList, function(i, val) {
-    val.style.backgroundColor = "#999999";
-    $(val).css("color","#FFFFFF");
+    val.style.backgroundColor = QUE_COLOR;
+    $(val).css("color",QUE_CHAR_COLOR);
     $(val).text("?");
   });
 });
