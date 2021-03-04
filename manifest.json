@@ -21,7 +21,6 @@
   "content_scripts": [
     {
       "matches": ["https://streamkit.discord.com/overlay/voice/*"],
-      "css": ["css/lib/spectrum.min.css"],
       "js": [
         "js/lib/jquery-3.2.1.min.js",
         "js/content.js"
@@ -31,7 +30,6 @@
 
 
   "permissions": [
-    "storage"
   ],
 
   "web_accessible_resources": ["images/*", "css/*"]
