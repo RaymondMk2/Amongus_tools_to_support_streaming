@@ -66,7 +66,7 @@ Chromeにこの拡張機能をインストールして、画面の一部をOBS�
 
 この拡張機能はブラウザから取得した情報をどこにも送信しません。
 拡張機能に入力された以下の設定をブラウザのローカルに保存し、拡張機能内で利用します。
-・DiscordOverlayで利用するDiscordのServerID
-・DiscordOverlayで利用するDiscordのChannnelID
-・DiscordOverlayから取得したDiscordのUserID(UserIDに色を対応させるために利用しています)
+1. DiscordOverlayで利用するDiscordのServerID
+2. DiscordOverlayで利用するDiscordのChannnelID
+3. DiscordOverlayから取得したDiscordのUserID(UserIDに色を対応させるために利用しています)
 </p>
