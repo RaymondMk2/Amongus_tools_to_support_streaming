@@ -50,3 +50,23 @@ Access streamkit link from [Discord Streamkit Overlay](https://streamkit.discord
 
 - Very useful tool - [Discord Streamkit Overlay](https://streamkit.discord.com/overlay)
 - Inspired - [Naoya79/Among-Us-Discord-Overlay](https://github.com/Naoya79/Among-Us-Discord-Overlay)
+
+## 説明（日本語）
+
+<p>
+「AMONG US」をYoutube等でストリーミングする際、Discord Overlayで参加者のアイコンを表示すると思います。
+この拡張機能は、Discord Overlayの機能を拡張して、以下のことができます。
+
+1. Discord Overlayの参加者アイコンに、簡単な操作でAMONG US上のキャラクターの色を設定して、強調表示することができます。（色を変更する際、Discord Overlay用のCSSを書き換える必要はありません。）
+
+2. Discord Overlayの参加者アイコンの下に、疑わしい(SUS)、潔白(PUR)を3つまで表示することができます。AMONG USでレポートされる度に怪しい人をマーキングしましょう。これにより、自分が疑っているプレイヤーを視聴者にも共有することができます。
+
+この拡張機能の画面の一部をOBSでキャプチャして配信してください。
+
+
+この拡張機能はブラウザから取得した情報をどこにも送信しません。
+拡張機能に入力された以下の設定をブラウザのローカルに保存し、拡張機能内で利用します。
+・DiscordOverlayで利用するDiscordのServerID
+・DiscordOverlayで利用するDiscordのChannnelID
+・DiscordOverlayから取得したDiscordのUserID(UserIDに色を対応させるために利用しています)
+</p>
