@@ -48,7 +48,7 @@ Access streamkit link from [Discord Streamkit Overlay](https://streamkit.discord
 
 ## Fork
 
-- Naoya79/Among-Us-Discord-Overlay - [Naoya79/Among-Us-Discord-Overlay](https://github.com/Naoya79/Among-Us-Discord-Overlay)
+- [Naoya79/Among-Us-Discord-Overlay](https://github.com/Naoya79/Among-Us-Discord-Overlay)
 
 ## Acknowledgments
 
