@@ -44,11 +44,11 @@ Access streamkit link from [Discord Streamkit Overlay](https://streamkit.discord
 
 ## Author
 
-- [Github](https://github.com/RaymondMk2)
+- RaymondMk2 - [Github](https://github.com/RaymondMk2)
 
 ## Fork
 
-- Fork - [Naoya79/Among-Us-Discord-Overlay](https://github.com/Naoya79/Among-Us-Discord-Overlay)
+- Naoya79/Among-Us-Discord-Overlay - [Naoya79/Among-Us-Discord-Overlay](https://github.com/Naoya79/Among-Us-Discord-Overlay)
 
 ## Acknowledgments
 
