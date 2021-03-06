@@ -19,11 +19,10 @@ body {
 	padding: 0;
 	overflow: hidden;
 	display: flex;
-	min-height: 100vh;
 }
 
 .detective {
-	width:784px;
+	width:835px;
 	height:48px;
 	margin:2px;
 	border:1px;
@@ -33,6 +32,8 @@ body {
 }
 
 .detectiveicon {
+	width:16px;
+	height:48px;
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -46,7 +47,7 @@ body {
 }
 
 .detectivesub {
-	width:768px;
+	width:816px;
 	height:48px;
 	margin: 0;
 	padding: 0;
@@ -54,7 +55,7 @@ body {
 }
 
 .detectivelist {
-	width:64px;
+	width:68px;
 	height:48px;
 	margin: 0;
 	padding: 0;
@@ -76,13 +77,16 @@ body {
 }
 
 .controlpanel {
+	width:836px;
+	height:180px;
 	margin:2px;
 	border:1px solid var(--BORDER_COLOR);
+	padding: 0;
 }
 
 .controlpanelTitle {
-	width:60px;
-	height:24px;
+	width:832px;
+	height:20px;
 	margin: 0;
 	padding: 0;
 	color: #FFFFFF;
@@ -98,16 +102,18 @@ body {
 }
 
 .playercolor {
+	width:832px;
 	height:26px;
 }
 
 .colorbox {
 	position:relative;      /* 色リストの基準位置になる */
-	width:62px;
+	width:60px;
 	height:24px;
 	margin:0px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-top:1px;
+	margin-bottom:1px;
+	margin-right:6px;
 	border:1px solid var(--BORDER_COLOR);
 	text-align:center;
 	border-radius:8px;
@@ -159,14 +165,16 @@ body {
 }
 
 .detectiveop {
-	width:784px;
+	width:832px;
 	height:72px;
 	margin: 0;
 	padding: 0;
-	margin-top: 12px;
+	margin-top: 8px;
 }
 
 .detectiveiconop {
+	width:16px;
+	height:72px;
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -180,7 +188,7 @@ body {
 }
 
 .detectivesubop {
-	width:768px;
+	width:816px;
 	height:72px;
 	margin: 0;
 	padding: 0;
@@ -188,16 +196,17 @@ body {
 }
 
 .detectivelistop {
-	width:64px;
+	width:62px;
 	height:24px;
 	margin: 0;
+	margin-right:6px;
 	padding: 0;
 	float: left;
 }
 
 .detectiveselect0 {
 	width:20px;
-	height:24px;
+	height:22px;
 	margin:0px;
 	border:1px solid var(--BORDER_COLOR);
 	color: var(--SUS_CHAR_COLOR);
@@ -209,8 +218,8 @@ body {
 	cursor: pointer;
 }
 .detectiveselect1 {
-	width:18px;
-	height:24px;
+	width:16px;
+	height:22px;
 	margin:0px;
 	border:1px solid var(--BORDER_COLOR);
 	color: var(--QUE_CHAR_COLOR);
@@ -223,7 +232,7 @@ body {
 }
 .detectiveselect2 {
 	width:20px;
-	height:24px;
+	height:22px;
 	margin:0px;
 	border:1px solid var(--BORDER_COLOR);
 	color: var(--PUR_CHAR_COLOR);
@@ -237,10 +246,10 @@ body {
 
 .resetbutton {
 	width:64px;
-	height:20px;
+	height:18px;
 	padding: 2px;
 	margin:2px;
-	margin-top: 24px;
+	margin-top: 12px;
 	margin-left: 12px;
 	border: solid 2px #F0F0F0;
 	border-radius: 4px;
