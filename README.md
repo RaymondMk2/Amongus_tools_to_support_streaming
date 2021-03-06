@@ -18,7 +18,7 @@
 
 ## Install
 
-Download & install from **_[Chrome Web Store](https://chrome.google.com/webstore/detail/...)_**
+Download & install from **_[Chrome Web Store](https://chrome.google.com/webstore/detail/amongussupportstreaming/mimjhpkiimjjhlhjipjoffnoadiojglm)_**
 
 ## Usage
 
