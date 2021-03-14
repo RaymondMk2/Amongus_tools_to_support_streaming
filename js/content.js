@@ -14,12 +14,28 @@ const CREW_COLORS = [
   "rgba(56, 254, 220, 1.0)",
   "rgba(80, 239, 57, 1.0)"
 ];
+const CREW_DEAD_ICON = [
+  "dead01.png",
+  "dead02.png",
+  "dead03.png",
+  "dead04.png",
+  "dead05.png",
+  "dead06.png",
+  "dead07.png",
+  "dead08.png",
+  "dead09.png",
+  "dead10.png",
+  "dead11.png",
+  "dead12.png"
+];
 const SUS_COLOR = "#FF0000";
 const SUS_CHAR_COLOR = "#FFFFFF";
 const QUE_COLOR = "#999999";
 const QUE_CHAR_COLOR = "#FFFFFF";
 const PUR_COLOR = "#0080FF";
 const PUR_CHAR_COLOR = "#FFFFFF";
+const DEAD_COLOR = "#000000";
+const DEAD_CHAR_COLOR = "#FF0000";
 
 /*
 const SUS_COLOR = "#000000";
@@ -325,16 +341,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="0" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="0" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="0" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="0" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="0" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="0" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="0" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="0" data-num="1" data-cid="3">DEAD</div>
     	  	</div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="0" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="0" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="0" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="0" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -342,16 +361,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="1" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="1" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="1" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="1" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="1" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="1" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="1" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="1" data-num="1" data-cid="3">DEAD</div>
       		</div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="1" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="1" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="1" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="1" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -359,16 +381,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="2" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="2" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="2" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="2" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="2" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="2" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="2" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="2" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="2" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="2" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="2" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="2" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -376,16 +401,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="3" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="3" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="3" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="3" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="3" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="3" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="3" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="3" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="3" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="3" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="3" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="3" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -393,16 +421,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="4" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="4" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="4" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="4" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="4" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="4" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="4" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="4" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="4" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="4" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="4" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="4" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -410,16 +441,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="5" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="5" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="5" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="5" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="5" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="5" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="5" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="5" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="5" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="5" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="5" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="5" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -427,16 +461,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="6" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="6" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="6" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="6" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="6" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="6" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="6" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="6" data-num="1" data-cid="3">DEAD</div>
 		      </div>
             <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="6" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="6" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="6" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="6" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -444,16 +481,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="7" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="7" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="7" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="7" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="7" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="7" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="7" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="7" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="7" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="7" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="7" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="7" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -461,16 +501,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="8" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="8" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="8" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="8" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="8" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="8" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="8" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="8" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="8" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="8" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="8" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="8" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -478,16 +521,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="9" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="9" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="9" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="9" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="9" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="9" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="9" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="9" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="9" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="9" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="9" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="9" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -495,16 +541,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="10" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="10" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="10" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="10" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="10" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="10" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="10" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="10" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="10" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="10" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="10" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="10" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
         <div class="detectivelistop">
@@ -512,16 +561,19 @@ $("body").append(`
 	          <div class="detectiveselect0" data-id="11" data-num="0" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="11" data-num="0" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="11" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="11" data-num="0" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="11" data-num="1" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="11" data-num="1" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="11" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="11" data-num="1" data-cid="3">DEAD</div>
 		      </div>
           <div class="detectivelistsubop">
 	          <div class="detectiveselect0" data-id="11" data-num="2" data-cid="0">SUS</div>
 	          <div class="detectiveselect1" data-id="11" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="11" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="11" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
       </div>
@@ -730,6 +782,13 @@ $(".detectiveselect2").on("click", function () {
   changeDetectiveSus(vSelectId, vSelectNumId, vSelectColorId);
 });
 
+$(".crewstatus").on("click", function () {
+  var vSelectId = Number($(this).attr('data-id'));
+  var vSelectNumId = Number($(this).attr('data-num'));
+  var vSelectColorId = Number($(this).attr('data-cid'));
+  changeDetectiveSus(vSelectId, vSelectNumId, vSelectColorId);
+});
+
 /* 推理結果のセット */
 function changeDetectiveSus(UserIndex, NumIndex, ColorIndex) {
   var vUserList = document.getElementsByClassName("detectivelist");
@@ -741,6 +800,7 @@ function changeDetectiveSus(UserIndex, NumIndex, ColorIndex) {
         case 0 : vSus.style.backgroundColor = SUS_COLOR; $(vSus).css("color",SUS_CHAR_COLOR); $(vSus).text("SUS"); break;
         case 1 : vSus.style.backgroundColor = QUE_COLOR; $(vSus).css("color",QUE_CHAR_COLOR); $(vSus).text("?"); break;
         case 2 : vSus.style.backgroundColor = PUR_COLOR; $(vSus).css("color",PUR_CHAR_COLOR); $(vSus).text("PUR"); break;
+        case 3 : vSus.style.backgroundColor = DEAD_COLOR; $(vSus).css("color",DEAD_CHAR_COLOR); $(vSus).text("DEAD"); break;
         default : vSus.style.backgroundColor = QUE_COLOR; $(vSus).css("color",QUE_CHAR_COLOR); $(vSus).text("?"); break;
       }
   　}
