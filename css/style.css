@@ -7,6 +7,8 @@
   --QUE_CHAR_COLOR: #FFFFFF;
   --PUR_COLOR: #0080FF;
   --PUR_CHAR_COLOR: #FFFFFF;
+  --DEAD_COLOR: #000000;
+  --DEAD_CHAR_COLOR: #FF0000;
 }
 
 * {
@@ -78,7 +80,7 @@ body {
 
 .controlpanel {
 	width:836px;
-	height:180px;
+	height:192px;
 	margin:2px;
 	border:1px solid var(--BORDER_COLOR);
 	padding: 0;
@@ -166,7 +168,7 @@ body {
 
 .detectiveop {
 	width:832px;
-	height:72px;
+	height:138px;
 	margin: 0;
 	padding: 0;
 	margin-top: 8px;
@@ -174,7 +176,7 @@ body {
 
 .detectiveiconop {
 	width:16px;
-	height:72px;
+	height:138px;
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -182,14 +184,15 @@ body {
 
 .detectiveiconsubop {
 	width:16px;
-	height:24px;
+	height:40px;
 	margin: 0;
+	margin-bottom:6px;
 	padding: 0;
 }
 
 .detectivesubop {
 	width:816px;
-	height:72px;
+	height:138px;
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -197,11 +200,19 @@ body {
 
 .detectivelistop {
 	width:62px;
-	height:24px;
+	height:138px;
 	margin: 0;
 	margin-right:6px;
 	padding: 0;
 	float: left;
+}
+
+.detectivelistsubop {
+	width:62px;
+	height:40px;
+	margin: 0;
+	margin-bottom:6px;
+	padding: 0;
 }
 
 .detectiveselect0 {
@@ -243,13 +254,27 @@ body {
 	text-align: center;
 	cursor: pointer;
 }
+.crewstatus {
+	width:60px;
+	height:14px;
+	margin:0px;
+	border:1px solid var(--BORDER_COLOR);
+	color: var(--DEAD_CHAR_COLOR);
+	background: var(--DEAD_COLOR);
+	border-radius:8px;
+	float: left;
+	font-size: 4px;
+	text-align: center;
+	cursor: pointer;
+
+}
 
 .resetbutton {
 	width:64px;
 	height:18px;
 	padding: 2px;
 	margin:2px;
-	margin-top: 12px;
+	margin-top: 8px;
 	margin-left: 12px;
 	border: solid 2px #F0F0F0;
 	border-radius: 4px;
