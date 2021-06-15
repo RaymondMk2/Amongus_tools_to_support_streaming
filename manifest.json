@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "AmongUsSupportStreaming",
   "description": "AmongUsTools to Support Streaming.",
-  "version": "0.9.4",
+  "version": "0.9.5",
 
   "icons" : {
     "16" : "images/icon16.png",
