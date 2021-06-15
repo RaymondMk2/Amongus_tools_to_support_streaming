@@ -12,8 +12,15 @@ const CREW_COLORS = [
   "rgba(106, 47, 185, 1.0)",
   "rgba(113, 73, 30, 1.0)",
   "rgba(56, 254, 220, 1.0)",
-  "rgba(80, 239, 57, 1.0)"
+  "rgba(80, 239, 57, 1.0)",
+  "rgba(241, 199, 208, 1.0)",
+  "rgba(113, 132, 148, 1.0)",
+  "rgba(143, 133, 115, 1.0)",
+  "rgba(114, 24, 24, 1.0)",
+  "rgba(254, 253, 189, 1.0)",
+  "rgba(215, 99, 100, 1.0)"
 ];
+/*
 const CREW_DEAD_ICON = [
   "dead01.png",
   "dead02.png",
@@ -28,6 +35,7 @@ const CREW_DEAD_ICON = [
   "dead11.png",
   "dead12.png"
 ];
+*/
 const SUS_COLOR = "#FF0000";
 const SUS_CHAR_COLOR = "#FFFFFF";
 const QUE_COLOR = "#999999";
@@ -128,6 +136,26 @@ $("body").append(`
         <div class="detectivelistsub" data-id="1">?</div>
         <div class="detectivelistsub" data-id="2">?</div>
       </div>
+      <div class="detectivelist" data-id="12">
+        <div class="detectivelistsub" data-id="0">?</div>
+        <div class="detectivelistsub" data-id="1">?</div>
+        <div class="detectivelistsub" data-id="2">?</div>
+      </div>
+      <div class="detectivelist" data-id="13">
+        <div class="detectivelistsub" data-id="0">?</div>
+        <div class="detectivelistsub" data-id="1">?</div>
+        <div class="detectivelistsub" data-id="2">?</div>
+      </div>
+      <div class="detectivelist" data-id="14">
+        <div class="detectivelistsub" data-id="0">?</div>
+        <div class="detectivelistsub" data-id="1">?</div>
+        <div class="detectivelistsub" data-id="2">?</div>
+      </div>
+      <div class="detectivelist" data-id="15">
+        <div class="detectivelistsub" data-id="0">?</div>
+        <div class="detectivelistsub" data-id="1">?</div>
+        <div class="detectivelistsub" data-id="2">?</div>
+      </div>
     </div>
   </div>
   <div class="controlpanel">
@@ -150,6 +178,12 @@ $("body").append(`
           <li class="colorpalette" data-id="0" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="0" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="0" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="0" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="0" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="0" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="0" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="0" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="0" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="1">
@@ -166,6 +200,12 @@ $("body").append(`
           <li class="colorpalette" data-id="1" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="1" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="1" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="1" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="1" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="1" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="1" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="1" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="1" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="2">
@@ -182,6 +222,12 @@ $("body").append(`
           <li class="colorpalette" data-id="2" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="2" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="2" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="2" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="2" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="2" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="2" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="2" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="2" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="3">
@@ -198,6 +244,12 @@ $("body").append(`
           <li class="colorpalette" data-id="3" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="3" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="3" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="3" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="3" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="3" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="3" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="3" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="3" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="4">
@@ -214,6 +266,12 @@ $("body").append(`
           <li class="colorpalette" data-id="4" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="4" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="4" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="4" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="4" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="4" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="4" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="4" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="4" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="5">
@@ -230,6 +288,12 @@ $("body").append(`
           <li class="colorpalette" data-id="5" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="5" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="5" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="5" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="5" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="5" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="5" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="5" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="5" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="6">
@@ -246,6 +310,12 @@ $("body").append(`
           <li class="colorpalette" data-id="6" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="6" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="6" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="6" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="6" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="6" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="6" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="6" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="6" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="7">
@@ -262,6 +332,12 @@ $("body").append(`
           <li class="colorpalette" data-id="7" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="7" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="7" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="7" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="7" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="7" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="7" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="7" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="7" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="8">
@@ -278,6 +354,12 @@ $("body").append(`
           <li class="colorpalette" data-id="8" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="8" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="8" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="8" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="8" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="8" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="8" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="8" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="8" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="9">
@@ -294,6 +376,12 @@ $("body").append(`
           <li class="colorpalette" data-id="9" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="9" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="9" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="9" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="9" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="9" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="9" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="9" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="9" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="10">
@@ -310,6 +398,12 @@ $("body").append(`
           <li class="colorpalette" data-id="10" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="10" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="10" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="10" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="10" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="10" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="10" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="10" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="10" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
       <div class="colorbox" data-id="11">
@@ -326,6 +420,100 @@ $("body").append(`
           <li class="colorpalette" data-id="11" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
           <li class="colorpalette" data-id="11" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
           <li class="colorpalette" data-id="11" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="11" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="11" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="11" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="11" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="11" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="11" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
+        </ul>
+      </div>
+      <div class="colorbox" data-id="12">
+        <ul class=="ulcolorbox" data-id="12">
+          <li class="colorpalette" data-id="12" data-cid="0"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[0]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="1"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[1]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="2"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[2]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="3"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[3]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="4"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[4]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="5"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[5]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="6"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[6]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="7"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[7]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="8"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[8]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="12" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
+        </ul>
+      </div>
+      <div class="colorbox" data-id="13">
+        <ul class=="ulcolorbox" data-id="13">
+          <li class="colorpalette" data-id="13" data-cid="0"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[0]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="1"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[1]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="2"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[2]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="3"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[3]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="4"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[4]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="5"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[5]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="6"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[6]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="7"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[7]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="8"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[8]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="13" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
+        </ul>
+      </div>
+      <div class="colorbox" data-id="14">
+        <ul class=="ulcolorbox" data-id="14">
+          <li class="colorpalette" data-id="14" data-cid="0"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[0]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="1"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[1]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="2"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[2]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="3"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[3]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="4"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[4]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="5"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[5]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="6"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[6]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="7"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[7]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="8"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[8]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="14" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
+        </ul>
+      </div>
+      <div class="colorbox" data-id="15">
+        <ul class=="ulcolorbox" data-id="15">
+          <li class="colorpalette" data-id="15" data-cid="0"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[0]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="1"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[1]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="2"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[2]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="3"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[3]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="4"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[4]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="5"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[5]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="6"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[6]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="7"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[7]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="8"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[8]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="9"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[9]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="10"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[10]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="11"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[11]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="12"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[12]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="13"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[13]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="14"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[14]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="15"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[15]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="16"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[16]};"></label></li>
+          <li class="colorpalette" data-id="15" data-cid="17"><input type="radio" name="groupname"><label style="background-color: ${CREW_COLORS[17]};"></label></li>
         </ul>
       </div>
     </div>
@@ -574,6 +762,86 @@ $("body").append(`
 	          <div class="detectiveselect1" data-id="11" data-num="2" data-cid="1">?</div>
 	          <div class="detectiveselect2" data-id="11" data-num="2" data-cid="2">PUR</div>
 	          <div class="crewstatus" data-id="11" data-num="2" data-cid="3">DEAD</div>
+		      </div>
+        </div>
+        <div class="detectivelistop">
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="12" data-num="0" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="12" data-num="0" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="12" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="12" data-num="0" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="12" data-num="1" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="12" data-num="1" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="12" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="12" data-num="1" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="12" data-num="2" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="12" data-num="2" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="12" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="12" data-num="2" data-cid="3">DEAD</div>
+		      </div>
+        </div>
+        <div class="detectivelistop">
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="13" data-num="0" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="13" data-num="0" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="13" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="13" data-num="0" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="13" data-num="1" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="13" data-num="1" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="13" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="13" data-num="1" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="13" data-num="2" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="13" data-num="2" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="13" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="13" data-num="2" data-cid="3">DEAD</div>
+		      </div>
+        </div>
+        <div class="detectivelistop">
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="14" data-num="0" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="14" data-num="0" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="14" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="14" data-num="0" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="14" data-num="1" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="14" data-num="1" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="14" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="14" data-num="1" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="14" data-num="2" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="14" data-num="2" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="14" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="14" data-num="2" data-cid="3">DEAD</div>
+		      </div>
+        </div>
+        <div class="detectivelistop">
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="15" data-num="0" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="15" data-num="0" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="15" data-num="0" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="15" data-num="0" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="15" data-num="1" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="15" data-num="1" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="15" data-num="1" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="15" data-num="1" data-cid="3">DEAD</div>
+		      </div>
+          <div class="detectivelistsubop">
+	          <div class="detectiveselect0" data-id="15" data-num="2" data-cid="0">SUS</div>
+	          <div class="detectiveselect1" data-id="15" data-num="2" data-cid="1">?</div>
+	          <div class="detectiveselect2" data-id="15" data-num="2" data-cid="2">PUR</div>
+	          <div class="crewstatus" data-id="15" data-num="2" data-cid="3">DEAD</div>
 		      </div>
         </div>
       </div>
